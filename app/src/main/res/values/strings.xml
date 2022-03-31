@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TACOM</string>
+    <string name="developed_by">Developed by</string>
+    <string name="developer">Guilherme Machado</string>
+
+    <string name="add_name">Nome</string>
+    <string name="add_lastname">Sobrenome</string>
+    <string name="add_btn">Adicionar</string>
 </resources>
