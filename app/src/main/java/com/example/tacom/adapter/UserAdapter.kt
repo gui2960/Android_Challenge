@@ -9,11 +9,10 @@ import com.example.tacom.R
 import com.example.tacom.model.User
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-
-class UserAdapter(jsonObjects: List<User>) :
+class UserAdapter(userObjectList: List<User>) :
     RecyclerView.Adapter<UserAdapter.CustomViewHolder>() {
-    private val jsonObjects: List<User> = jsonObjects
-    private val jsonObjectsFull: List<User>
+    private val userObject: List<User> = userObjectList
+    private val userObjectFull: List<User>
 
     inner class CustomViewHolder(mView: View) :
         ViewHolder(mView) {
@@ -29,15 +28,15 @@ class UserAdapter(jsonObjects: List<User>) :
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        holder.textViewResource.text = jsonObjects[position].firstName
-        holder.textViewUpdated.text = jsonObjects[position].lastName
+        holder.textViewResource.text = userObject[position].firstName
+        holder.textViewUpdated.text = userObject[position].lastName
     }
 
     override fun getItemCount(): Int {
-        return jsonObjects.size
+        return userObject.size
     }
 
     init {
-        jsonObjectsFull = ArrayList(jsonObjects)
+        userObjectFull = ArrayList(userObject)
     }
 }
