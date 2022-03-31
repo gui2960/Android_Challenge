@@ -32,7 +32,7 @@ Desafio técnico para Desenvolvedor Android
   
   ```
 
-  e.inserir conteúdo em arquivo
+  e. Inserir conteúdo em arquivo
 
    ```
     adb pull {path_aquivo}
@@ -40,7 +40,7 @@ Desafio técnico para Desenvolvedor Android
     echo "conteudo" > nome_arquivo
    ```
 
-  f.adicionar conteúdo em arquivo
+  f. Adicionar conteúdo em arquivo
 
    ```
    adb shell
@@ -48,45 +48,45 @@ Desafio técnico para Desenvolvedor Android
    adb push {conteudo}
    ```
 
-  g.fazer download do arquivo teste
+  g. Fazer download do arquivo teste
 
    ```
    adb pull path_do_arquivo
    ```
 
-  h.fazer upload do arquivo teste2 para o diretódio /mnt/Tacom
+  h. Fazer upload do arquivo teste2 para o diretódio /mnt/Tacom
 
    ```
    adb push “C:\teste.txt” “/sdcard/mnt/Tacom”
    ```
 
-  i.filtrar pelo logcat utilizando uma determinada tag
+  i. Filtrar pelo logcat utilizando uma determinada tag
 
    ```
    adb logcat -s "tag"
    ```
 
-  j.filtrar pelo logcat por determinado conteúdo
+  j. Filtrar pelo logcat por determinado conteúdo
 
    ```
     adb logcat -v tag | grep -e “conteudo”
    ```
 
-  k.apagar o arquivo teste
+  k. Apagar o arquivo teste
 
   ```
     adb shell 
     rm path_do_arquivo/test.txt
   ```
 
-  l.criar um diretório MeuDiretorio
+  l. Criar um diretório MeuDiretorio
 
   ```
     adb shell 
     mkdir /sdcard/MeuDiretorio
   ```
 
-  m.apagar o diretório MeuDiretorio
+  m. Apagar o diretório MeuDiretorio
 
   ```
     adb shell 
@@ -94,34 +94,34 @@ Desafio técnico para Desenvolvedor Android
     rmdir MeuDiretorio
   ```
 
-  n.iniciar uma Activity através do terminal
+  n. Iniciar uma Activity através do terminal
 
   ```
     adb shell 
     am start -n com.example.tacom/com.example.test.MainActivity
   ```
 
-  o.iniciar um Service através do terminal
+  o. Iniciar um Service através do terminal
 
   ```
     adb shell 
     am startservice com.example.tacom/.YourTacomService
   ```
 
-  p.parar um Service através do terminal
+  p. Parar um Service através do terminal
 
   ```
     adb shell 
     am force-stop com.example.tacom
   ```
 
-  q.instalar uma apk através do terminal`
+  q. Instalar uma apk através do terminal`
 
    ```
     adb install example.apk
    ```
 
-  r.desinstalar uma apk através do terminal
+  r. Desinstalar uma apk através do terminal
 
    ```
     adb uninstall app_package_name
